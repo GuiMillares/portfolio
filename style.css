@@ -1,0 +1,83 @@
+/* 1. Fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* 2. Rolagem suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3. Barra de rolagem personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* Tailwind's gray-400 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6; /* Tailwind's gray-100 */
+}
+
+/* 4. Transições suaves para elementos interativos */
+button,
+a,
+input,
+select {
+  transition: all 0.3s ease-in-out;
+}
+
+/* 5. Tema escuro respeitando preferências do sistema */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111827; /* gray-900 */
+    color: #111827;; /* gray-50 */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1f2937; /* gray-800 */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #4b5563; /* gray-600 */
+  }
+
+  /* Links ou botões em tema escuro */
+  a:hover,
+  button:hover {
+    filter: brightness(1.4);
+  }
+}
+.card {
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
