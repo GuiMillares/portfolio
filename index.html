@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Guilherme, desenvolvedor web freelancer especializado em soluções digitais criativas.">
     <title>Guilherme | Desenvolvedor Web</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
@@ -87,7 +89,7 @@
         <div class="container mx-auto px-4 pb-0 mb-0">
             <h2 class="text-3xl font-bold mb-8 text-center">Entre em Contato</h2>
 
-            <form action="" method="POST" class="space-y-6">
+            <form action="https://formsubmit.co/guilhermec.millares@gmail.com" method="POST" class="space-y-6">
 
                 <!-- Nome -->
                 <div class="flex items-center space-x-4">
@@ -128,13 +130,16 @@
                     <label for="mensagem" class="text-lg">Sua Mensagem</label>
                     <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem aqui..."
                         class="w-full p-2 text-sm rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-500 min-h-[120px] resize-none"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+
+
                 </div>
 
 
                 <!-- Botão -->
                 <div>
                     <button type="submit"
-                        class="w-full py-3 rounded-md bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300">
+                        class="w-full py-3 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
                         Enviar Mensagem
                     </button>
                 </div>
@@ -146,10 +151,10 @@
             <p class="text-sm">&copy; 2025 Guilherme Millares. Todos os direitos reservados.</p>
             <p class="text-sm mt-2">
                 Desenvolvido por Guilherme |
-                <a href="https://github.com/GuiMillares" class="text-blue-400 hover:underline"
+                <a href="https://github.com/GuiMillares" class="text-blue-200 hover:text-blue-500"
                     target="_blank">GitHub</a> •
-                <a href="https://www.linkedin.com/in/guilherme-castro-609ba8181/" class="text-blue-400 hover:underline"
-                    target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/guilherme-castro-609ba8181/"
+                    class="text-blue-200 hover:text-blue-500" target="_blank">LinkedIn</a>
             </p>
         </div>
     </footer>
