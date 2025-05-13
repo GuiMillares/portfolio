@@ -81,4 +81,6 @@ select {
   .card-back {
     transform: rotateY(180deg);
   }
-  
+  p{
+    color:white;
+  }
